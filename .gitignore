@@ -1,0 +1,19 @@
+### Gradle template
+.gradle
+build/
+
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# IntelliJ
+*/out/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Mac specific
+.DS_Store
+
+out/

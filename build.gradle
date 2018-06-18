@@ -1,0 +1,28 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.25'
+
+    testCompile 'org.junit.jupiter:junit-jupiter-api:5.1.0'
+    testCompile 'junit:junit:4.12'
+
+    testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.1.0'
+    testRuntime 'org.junit.vintage:junit-vintage-engine:5.1.0'
+
+    runtime 'org.slf4j:slf4j-simple:1.7.25'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.6'
+}
